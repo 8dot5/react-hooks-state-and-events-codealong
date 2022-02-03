@@ -10,6 +10,8 @@ etc
 function Toggle() {
   let [ isOn, setIsOn ] = useState(false)
 
+  //the click leads to handleClick where:
+  // setIsOn(isOn) is telling React, its internal state should update to !isOn (false). Since the initial value is false, the end result is true
   function handleClick() {
     setIsOn((isOn) => !isOn)
   }
